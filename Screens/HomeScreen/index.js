@@ -104,14 +104,15 @@ const HomeScreen = () => {
               <ScrollView >
               <View style={styles.licenseView}>
               <Text >{licenseText}</Text>
-              <Pressable
+             
+            </View>
+            </ScrollView>
+            <Pressable
                 style={[styles.button, styles.buttonClose]}
                 onPress={() => setLicense(!license)}
               >
               <Text style={styles.textStyle}>확인</Text>
               </Pressable>
-            </View>
-            </ScrollView>
             </Modal>
           ) : null}
 
@@ -155,7 +156,8 @@ const styles = StyleSheet.create({
     padding: 35,
   },
   button: {
-    borderRadius: 20,
+    // borderRadius: 20,
+    alignItems: 'center',
     padding: 10,
     elevation: 0.1,
   },

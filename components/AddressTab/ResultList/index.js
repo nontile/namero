@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, Text, Share } from 'react-native';
+import {ScrollView, Share, TouchableOpacity } from 'react-native';
 import { Icon, ListItem } from 'react-native-elements'
 
 const ResultList = (props) => {
@@ -30,15 +30,14 @@ const ResultList = (props) => {
             <ScrollView showsVerticalScrollIndicator={false}>
             {
                 romanames.map((l, i) => (
-                <ListItem key={i} bottomDivider onLongPress={() => onShare(l)}>
+                <ListItem key={i} bottomDivider >
                     <ListItem.Content>
                         <ListItem.Title >{l.roadAddr}{' '}{l.zipNo}</ListItem.Title>
                         <ListItem.Subtitle >{l.korAddr}</ListItem.Subtitle>
                     </ListItem.Content>
-                    <Text></Text>
-                    
+                      <TouchableOpacity onPress={() => onShare(l)}>
                         <Icon name='share-social-outline' type='ionicon' color="#ccc" />
-                    
+                      </TouchableOpacity>
                 </ListItem>
                 ))
             }

@@ -4,7 +4,7 @@
     "slug": "romanization",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon_512.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,14 +21,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/icon_512.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.jsoone.ro",
-      "versionCode": 1
+      "versionCode": 2
     },
     "web": {
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/icon_512.png"
     }
   }
 }
